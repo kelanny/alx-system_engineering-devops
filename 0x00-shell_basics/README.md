@@ -4,3 +4,4 @@
 3. Added a 2-bring_me_home script to navigate me to user's home directory
 4. Added a script to list current directory in long format
 5. Added a script to list hidden files in long format
+6. Added a script to list all files with user and group ids
