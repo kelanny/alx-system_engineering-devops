@@ -12,4 +12,5 @@
 11. Navigated back to the previous working directaory 
 12. Listed 3 directories in long format
 13. Checked filetype of iamafile
-14. Created my first symbolic link 
+14. Created my first symbolic link
+15. Copied new and updated newer version filek 
