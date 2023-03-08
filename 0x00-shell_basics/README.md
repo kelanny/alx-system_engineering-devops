@@ -11,3 +11,4 @@
 10. Deleted first folder (my_first_directory)
 11. Navigated back to the previous working directaory 
 12. Listed 3 directories in long format
+13. Checked filetype of iamafile 
