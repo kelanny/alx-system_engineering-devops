@@ -15,3 +15,4 @@
 14. Created my first symbolic link
 15. Copied new and updated newer version file
 16. Moved Files with wildcard 
+17. Deleted files with wildcards.
