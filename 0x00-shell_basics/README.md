@@ -5,3 +5,4 @@
 4. Added a script to list current directory in long format
 5. Added a script to list hidden files in long format
 6. Added a script to list all files with user and group ids
+7. Added a script to create a new directory
