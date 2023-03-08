@@ -2,3 +2,4 @@
 
 2. Added 1-listit script to show the content of the current directory
 3. Added a 2-bring_me_home script to navigate me to user's home directory
+4. Added a script to list current directory in long format
