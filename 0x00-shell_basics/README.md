@@ -7,4 +7,5 @@
 6. Added a script to list all files with user and group ids
 7. Added a script to create a new directory
 8. Moved a file from  to a new folder above
-9. Deleted betty file 
+9. Deleted betty file
+10. Deleted first folder (my_first_directory) 
