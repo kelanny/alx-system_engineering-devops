@@ -8,4 +8,5 @@
 7. Added a script to create a new directory
 8. Moved a file from  to a new folder above
 9. Deleted betty file
-10. Deleted first folder (my_first_directory) 
+10. Deleted first folder (my_first_directory)
+11. Navigated back to the previous working directaory 
