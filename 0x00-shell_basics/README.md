@@ -1,4 +1,4 @@
-Working on 0-current_working_directory script that print the absolute path of current working directory.
+1. Working on 0-current_working_directory script that print the absolute path of current working directory.
 
-Added 1-listit script to show the content of the current directory
-Added a 2-bring_me_home script to navigate me to user's home directory
+2. Added 1-listit script to show the content of the current directory
+3. Added a 2-bring_me_home script to navigate me to user's home directory
