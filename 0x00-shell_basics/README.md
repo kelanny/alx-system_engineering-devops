@@ -18,4 +18,5 @@
 17. Deleted files with wildcards.
 18. Created directory with subdirectory
 19. Listed files with detailed options
+20. Created a magic file to check school data files.
 
