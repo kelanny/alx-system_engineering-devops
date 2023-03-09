@@ -17,4 +17,5 @@
 16. Moved Files with wildcard 
 17. Deleted files with wildcards.
 18. Created directory with subdirectory
+19. Listed files with detailed options
 
