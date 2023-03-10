@@ -5,3 +5,4 @@ Created a script to change file ownership
 Creatted an empty file
 Created a script to add permission to owner
 Created a script to add multiple permissions
+Created a script to give execute permission to everybody
