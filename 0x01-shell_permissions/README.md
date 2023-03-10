@@ -6,3 +6,4 @@ Creatted an empty file
 Created a script to add permission to owner
 Created a script to add multiple permissions
 Created a script to give execute permission to everybody
+Created a file that give everybody all permissions.
