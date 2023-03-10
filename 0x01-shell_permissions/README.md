@@ -10,3 +10,4 @@ Created a file that give everybody all permissions.
 Created a script that gave multiple permissions
 Changed hello file permissions to thosee of olleh
 Changed first directories permissions with a script
+Created a directory my_dir with certain permissions
