@@ -15,3 +15,4 @@ Changed the group ownership of file hello
 Wrote a script that changed the owner and group owner of working directory.
 Changed a symbolic link permissions
 Played starwrs iv in the terminal.
+Changed a file ownership from guillaume to betty
