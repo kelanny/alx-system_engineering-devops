@@ -3,3 +3,4 @@ Created a script that checks the current user
 Created  ascript to show groups of current users
 Created a script to change file ownership
 Creatted an empty file
+Created a script to add permission to owner
