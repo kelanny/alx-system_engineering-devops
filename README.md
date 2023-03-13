@@ -1,1 +1,1 @@
-My first SE dev-ops repository.
+Wrote a script to display hello world
