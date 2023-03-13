@@ -1,8 +1,1 @@
-Wrote a script to display hello world
-Added a script to print confused smiley
-Added a script to display the passwd file in etc directory
-Added a script that display content of two files 
-Displaying last 10 lines of  passwd file
-Added script that display first 10 lines of passwd file
-Script that views the 3rd line on iacta 
-Added a script that write to a file
+Added a script that write the content of cwd in a file using redirection
