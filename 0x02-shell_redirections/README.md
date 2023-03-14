@@ -9,3 +9,4 @@ Display the number of lines that contain the pattern bin
 Displayed lines containingg root pattern and 3 more lines
 Displayed lines in a file that do not contain bin
 Displaying lines of a files that start with a letter
+REplacing some letters to other leters  
