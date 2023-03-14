@@ -14,3 +14,5 @@ Added ascript that remove letter c from input
 Reversed input with a script
 Displayin all empty files in directories
 Display all gif files 
+Create a script that decodes acrostics that use the first letter of each line
+Displayed users and their home directories
