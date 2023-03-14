@@ -6,3 +6,4 @@ Displayed 10 newest files on cwd
 Filtered list to unique words
 Added a script to search  word.
 Display the number of lines that contain the pattern bin
+Displayed lines containingg root pattern and 3 more lines
