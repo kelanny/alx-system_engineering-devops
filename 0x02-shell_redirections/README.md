@@ -13,3 +13,4 @@ REplacing some letters to other leters
 Added ascript that remove letter c from input
 Reversed input with a script
 Displayin all empty files in directories
+Display all gif files 
