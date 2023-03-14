@@ -5,3 +5,4 @@ Displayed environment variables
 Displayed all local and environment variables 
 Created a local variable BEST 
 Created a global variable with a script
+ADded a script that display sum of number and variable
