@@ -9,3 +9,4 @@ ADded a script that display sum of number and variable
 Added a script to divide two number variables
 Added a script that powers BREATH to the power of LOVE as variables
 Added a script to count numbmer of directoryes in PATH variable
+Added a script that change number tobinary
