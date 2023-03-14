@@ -3,3 +3,4 @@ Added a script that say hello to user
 Added a path /action to the PATH variable
 Displayed environment variables
 Displayed all local and environment variables 
+Created a local variable BEST 
