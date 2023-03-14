@@ -7,3 +7,4 @@ Created a local variable BEST
 Created a global variable with a script
 ADded a script that display sum of number and variable
 Added a script to divide two number variables
+Added a script that powers BREATH to the power of LOVE as variables
