@@ -16,3 +16,4 @@ Displayin all empty files in directories
 Display all gif files 
 Create a script that decodes acrostics that use the first letter of each line
 Displayed users and their home directories
+ADded a script that parses web servers for ip address
