@@ -12,3 +12,4 @@ Added a script to count numbmer of directoryes in PATH variable
 Added a script that change number tobinary
 Created a script to 2 letter combinations
 Displayed formated float numbers with printf
+Converted number to hexadecimal in a script
