@@ -14,3 +14,4 @@ Created a script to 2 letter combinations
 Displayed formated float numbers with printf
 Converted number to hexadecimal in a script
 Created a rot-13 encryption with a shell script
+Created a script to print every other line in a file
