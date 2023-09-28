@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Display Best school on a loop but print bad luck and good luck on loop 4, 8
 
 count=1
 
