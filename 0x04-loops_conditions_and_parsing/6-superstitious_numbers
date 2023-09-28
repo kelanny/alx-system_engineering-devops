@@ -7,19 +7,19 @@ count=1
 while [ $count -le 20 ]; do
 
 	if [ $count -eq 4 ]; then
-		echo $count
+		echo "$count"
 		echo "bad luck form China"
 	
 	elif [ $count -eq 9 ]; then
-		echo $count
+		echo "$count"
 		echo "bad lack from Japan"
 
 	elif [ $count -eq 17 ]; then
-		echo $count
+		echo "$count"
 		echo "bad luck from Italy"
 
 	else
-		echo $count
+		echo "$count"
 
 	fi
 	count=$((count + 1))
