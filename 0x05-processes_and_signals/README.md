@@ -61,7 +61,6 @@ Write a Bash script that stops 4-to_infinity_and_beyond process.
 Requirements:
 
 You cannot use kill or killall
-Terminal #0
 
 TASK: 7. Highlander
 mandatory
@@ -72,7 +71,6 @@ With a sleep 2 in between each iteration
 I am invincible!!! when receiving a SIGTERM signal
 Make a copy of your 6-stop_me_if_you_can script, name it 67-stop_me_if_you_can, that kills the 7-highlander process instead of the 4-to_infinity_and_beyond one.
 
-Terminal #0
 
 TASK: 8. Beheaded process
 mandatory
@@ -82,7 +80,47 @@ Terminal #08. Beheaded process
 mandatory
 Write a Bash script that kills the process 7-highlander.
 
-Terminal #0
+TASK: 9. Process and PID file
+#advanced
+Write a Bash script that:
 
+Creates the file /var/run/myscript.pid containing its PID
+Displays To infinity and beyond indefinitely
+Displays I hate the kill command when receiving a SIGTERM signal
+Displays Y U no love me?! when receiving a SIGINT signal
+Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
+TASK: 10. Manage my process
+Write a manage_my_process Bash script that:
 
+Indefinitely writes I am alive! to the file /tmp/my_process
+In between every I am alive! message, the program should pause for 2 seconds
+Write Bash (init) script 101-manage_my_process that manages manage_my_process. (both files need to be pushed to git)
+
+Requirements:
+
+When passing the argument start:
+Starts manage_my_process
+Creates a file containing its PID in /var/run/my_process.pid
+Displays manage_my_process started
+When passing the argument stop:
+Stops manage_my_process
+Deletes the file /var/run/my_process.pid
+Displays manage_my_process stopped
+When passing the argument restart
+Stops manage_my_process
+Deletes the file /var/run/my_process.pid
+Starts manage_my_process
+Creates a file containing its PID in /var/run/my_process.pid
+Displays manage_my_process restarted
+Displays Usage: manage_my_process {start|stop|restart} if any other argument or no argument is passed
+Note that this init script is far from being perfect (but good enough for the sake of manipulating process and PID file), for example we do not handle the case where we check if a process is already running when doing ./101-manage_my_process start, in our case it will simply create a new process instead of saying that it is already started.
+
+TASK: 11. Zombie
+Write a C program that creates 5 zombie processes.
+
+Requirements:
+
+For every zombie process created, it displays Zombie process created, PID: ZOMBIE_PID
+Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+When your code is done creating the parent process and the zombies, use the function bellow
