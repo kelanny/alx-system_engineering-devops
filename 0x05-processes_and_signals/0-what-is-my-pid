@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display the current PID of this script
+my_pid=$$
+echo "$my_pid"
