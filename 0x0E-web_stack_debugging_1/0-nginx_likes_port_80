@@ -1,0 +1,29 @@
+#!/bin/bash
+#Install and configure configure nginx server
+
+#Update package list
+apt-get update
+
+#Install Nginx if not installed
+apt-get install -y nginx
+
+# Check Nginx configuration for errors.
+
+nginx -t
+
+# Enure Nginx is enabled to start on boot
+systemctl enable nginx
+
+
+# Restart Nginx to apply changes
+systemctl restart nginx
+
+
+# Check active listening ports
+netstat -tuln
+
+# Display active IPv4 IPs
+ip -4 addr show
+
+# Print a message indicating the script has fininshed.
+echo "Nginx configuration check and restart completed."
