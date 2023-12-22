@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 # uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
-ssh -i ~/.ssh/school.pub ubuntu@107.22.143.10
+
+server_address="54.161.241.44"
+private_key="~/.ssh/school"
+
+remote_user="ubuntu"
+
+ssh -i "$private_key" "$remote_user"@"$server_address" 
