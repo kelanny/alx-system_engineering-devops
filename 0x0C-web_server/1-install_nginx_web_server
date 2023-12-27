@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Install and configure a nginx web server in a server
+
+apt-get update
+
+apt-get install -y nginx
+
+echo "<html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
+
+chown ubuntu:ubuntu /var/www/html/index.html
+chmod 644 /var/www/html/index.html
+
+cat <<EOF > /etc/nginx/sites-available/default
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	
+	root /var/www/html;
+	index index.html index.htm;
+
+
+	server_name _;
+
+	location / {
+		try_files \$uri \$uri/ =404;
+	}
+}
+EOF
+
+/etc/init.d/nginx restart
+
+echo "Nginx installation and configuration completed successfully."
