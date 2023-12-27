@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-
 # Install and configure a nginx web server in a server
 
 apt-get update
 
 apt-get install -y nginx
 
-echo "<html><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 
 chown ubuntu:ubuntu /var/www/html/index.html
 chmod 644 /var/www/html/index.html
