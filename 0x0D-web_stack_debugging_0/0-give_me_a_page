@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Fix Apache server to return Holberton School
+
+
+/etc/init.d/apache2 start
