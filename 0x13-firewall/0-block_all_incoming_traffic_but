@@ -1,0 +1,15 @@
+#!/bin/bash
+# Install and configure firewall to allow port 22, 443 and port 80
+
+apt-get update
+apt-get install ufw
+
+ufw default deny incoming
+
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+
+ufw enable
+
+ufw status
