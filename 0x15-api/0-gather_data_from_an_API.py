@@ -2,15 +2,15 @@
 """A script that pulls employee TODO list using REST API."""
 
 import requests
-from sys import argv
+import sys 
 
 
 if __name__ == "__main__":
-    if len(argv) != 2 or not argv[1].isdigit():
+    if len(sys.argv) != 2 or not sys.argv[1].isdigit():
         print("Usage: ./gather_data_from_API.py <employee_id>")
         exit(1)
 
-    employee_id = int(argv[1])
+    employee_id = int(sys.argv[1])
     base_url = "https://jsonplaceholder.typicode.com/"
     user_url = f"{base_url}/users/{employee_id}"
     todos_url = f"{base_url}/todos?userId={employee_id}"
