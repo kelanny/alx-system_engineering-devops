@@ -1,9 +1,7 @@
-#!/usr/bin/env bash
-# uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+#!/usr/bin/bash
+# Use ssh to connect to a remote server and execute a command
 
-server_address="54.161.241.44"
-private_key="~/.ssh/school"
 
-remote_user="ubuntu"
+ssh -i /home/mburu/.ssh/school ubuntu@35.174.184.152
 
-ssh -i "$private_key" "$remote_user"@"$server_address" 
+
