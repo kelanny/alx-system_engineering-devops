@@ -2,6 +2,6 @@
 # Use ssh to connect to a remote server and execute a command
 
 
-ssh -i /home/mburu/.ssh/school ubuntu@35.174.184.152
+ssh -i /home/mburu/.ssh/school ubuntu@54.236.46.38
 
 
