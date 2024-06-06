@@ -1,7 +1,9 @@
-### Postmortem: The Great Checkout Crash of 2024
-by **Kelvin Chuchu**
-Read on [medium](https://medium.com/@mburukelvin17/an-incident-report-on-the-great-e-commerce-checkout-crash-2024-e3ea17ef080d)
 
+# Postmortem: The Great Checkout Crash of 2024
+by **Kelvin Chuchu**
+**Published**: 6, June 2024
+
+Read article on  [medium](https://medium.com/@mburukelvin17/an-incident-report-on-the-great-e-commerce-checkout-crash-2024-e3ea17ef080d)
 
 ### A Comic Relief
 
