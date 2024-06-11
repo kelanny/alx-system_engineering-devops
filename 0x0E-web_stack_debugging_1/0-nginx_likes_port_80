@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-#Install and configure configure nginx server
+# script that restores the default server port
 
-apt-get update
-apt-get install -y nginx
-nginx -t
-service nginx start
-
-curl 0:80
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx start

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Install and configure configure nginx server
-apt-get install -y nginx
-curl 0:80
-service nginx stop
+# script of task 0 but using less lines
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+sudo kill "$(pgrep 'nginx' |head -1)"
