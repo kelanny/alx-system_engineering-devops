@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Install and configure configure nginx server
+apt-get install -y nginx
+curl 0:80
+service nginx stop
