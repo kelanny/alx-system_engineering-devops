@@ -61,4 +61,4 @@ echo "Creating a new symbolic link from $CONFIG_FILE to $SYMLINK_PATH."
 sudo ln -sf "$CONFIG_FILE" "$SYMLINK_PATH"
 
 # Restart nginx server
-service nginx start
+sudo service nginx start
