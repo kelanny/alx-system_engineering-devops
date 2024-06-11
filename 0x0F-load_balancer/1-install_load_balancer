@@ -24,7 +24,7 @@ backend http_back
         balance roundrobin
         server 388261-web-01 54.236.46.38:80 check
         server 388261-web-02 100.24.235.141:80 check
-"| tee -a /etc/haproxy/haproxy.cfg > /dev/null
+" >> /etc/haproxy/haproxy.cfg
 
 # Enable initial startup
 systemctl enable haproxy

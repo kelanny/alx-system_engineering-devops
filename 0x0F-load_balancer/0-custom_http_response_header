@@ -1,28 +1,64 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Configures nginx to return a custom HTTP response header
 
-# Install nginx
+
+# Install nginx on alx web server
 sudo apt-get update
 sudo apt-get install -y nginx
 
-# Create a custom configuration file
-sudo bash -c 'cat > /etc/nginx/sites-available/default' << EOF
-server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
+# Path to the symbolic link
+SYMLINK_PATH="/etc/nginx/sites-enabled/default"
+CONFIG_FILE="/etc/nginx/sites-available/default"
 
-        root /var/www/html;
-        index index.html index.htm;
+# Check if the Nginx configuration file exists
+if [ ! -f $CONFIG_FILE ]; then
+  echo "Nginx configuration file not found!"
+  exit 1
+fi
+
+# Add custom response header to identify server for debugging
+HOST_NAME=$(hostname)
+HEADER="\\\n\tadd_header X-Served-By $HOST_NAME'\n"
+FIND=$(grep "X-Server-by" $CONFIG_FILE)
+if [[ -z $FIND ]]; then
+	sed -i "23i $HEADER" $CONFIG_FILE
+fi
+
+# Create a first index.html page
+echo "Hello World!" > /var/www/html/index.html
 
 
-        server_name _;
+# Add to the nginx configuration file a redirection to another page
+FIND=$(grep "redirect_me" $CONFIG_FILE)
+CONTENT="\\\n\tlocation /redirect_me {\n\t\t return 301 https://www.google.com;\n\t}\n"
 
-        location / {
-                try_files $uri $uri/ =404;
-                add_header X-Served-By $(hostname);
-        }
-}
-EOF
+if [[ -z $FIND ]]; then
+	sed -i "42i $CONTENT" $CONFIG_FILE
+fi
 
-# Restart nginx
-sudo systemctl restart nginx
+#Add an error page to the nginx configuration file
+FIND=$(grep "error_page 404" $CONFIG_FILE)
+ERROR="\\\n\terror_page 404 /custom_404.html;\n"
+if [[ -z $FIND ]]; then
+	echo "Ceci n\'est pas une page" > /var/www/html/custom_404.html
+	sed -i "40i $ERROR" $CONFIG_FILE
+fi
+
+
+# Check if the symbolic link exists
+if [ -L "$SYMLINK_PATH" ]; then
+  echo "Symbolic link $SYMLINK_PATH exists. Deleting it."
+  sudo rm -f "$SYMLINK_PATH"
+elif [ -e "$SYMLINK_PATH" ]; then
+  echo "$SYMLINK_PATH exists but is not a symbolic link. Deleting it."
+  sudo rm -rf "$SYMLINK_PATH"
+else
+  echo "Symbolic link $SYMLINK_PATH does not exist."
+fi
+
+# Create a new symbolic link
+echo "Creating a new symbolic link from $CONFIG_FILE to $SYMLINK_PATH."
+sudo ln -sf "$CONFIG_FILE" "$SYMLINK_PATH"
+
+# Restart nginx server
+service nginx start
